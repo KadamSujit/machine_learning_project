@@ -1,5 +1,5 @@
-# machine_learning_project
-This is first Machine Learning Project
+Application url:
+[HousingPredictor](https://ml-regression-app.herokuapp.com/)
 
 ## Start Machine Learning project.
 
@@ -64,11 +64,10 @@ To check remote url
 git remote -v
 ```
 
-To setup CI/CD pipeline in Heroku
-1. Heroku email - sujitpkadam1991@gmail.com
-2. Heroku app key 
-3. Heroku app name - ml-regression-app-t1
-
+To setup CI/CD pipeline in heroku we need 3 information
+1. HEROKU_EMAIL = <>
+2. HEROKU_API_KEY = <>
+3. HEROKU_APP_NAME = <>
 
 BUILD DOCKER IMAGE
 ```
@@ -113,3 +112,7 @@ pip install ipykernel
 
 Data Drift:
 When your datset stats gets change we call it as data drift
+
+
+
+## Write a function to get training file path from artifact dir
