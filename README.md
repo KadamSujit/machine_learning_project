@@ -64,3 +64,55 @@ To check remote url
 git remote -v
 ```
 
+To setup CI/CD pipeline in Heroku
+Heroku email - sujitpkadam1991@gmail.com
+Heroku app key - 532fea04-a8bc-4928-8235-2e14ac408bb9
+Heroku app name - ml-regression-app-t1
+
+
+
+BUILD DOCKER IMAGE
+```
+docker build -t <image_name>:<tagname> .
+```
+> Note: Image name for docker must be lowercase
+
+
+To list docker image
+```
+docker images
+```
+
+Run docker image
+```
+docker run -p 5000:5000 -e PORT=5000 f8c749e73678
+```
+
+To check running container in docker
+```
+docker ps
+```
+
+Tos stop docker conatiner
+```
+docker stop <container_id>
+```
+
+
+
+```
+python setup.py install
+```
+
+
+Install ipykernel
+
+```
+pip install ipykernel
+```
+
+
+Data Drift:
+When your datset stats gets change we call it as data drift
+
+
