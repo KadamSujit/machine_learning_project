@@ -65,9 +65,9 @@ git remote -v
 ```
 
 To setup CI/CD pipeline in Heroku
-Heroku email - sujitpkadam1991@gmail.com
-Heroku app key - 532fea04-a8bc-4928-8235-2e14ac408bb9
-Heroku app name - ml-regression-app-t1
+1. Heroku email - sujitpkadam1991@gmail.com
+2. Heroku app key 
+3. Heroku app name - ml-regression-app-t1
 
 
 BUILD DOCKER IMAGE
@@ -113,5 +113,3 @@ pip install ipykernel
 
 Data Drift:
 When your datset stats gets change we call it as data drift
-
-
