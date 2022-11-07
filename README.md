@@ -70,7 +70,6 @@ Heroku app key - 532fea04-a8bc-4928-8235-2e14ac408bb9
 Heroku app name - ml-regression-app-t1
 
 
-
 BUILD DOCKER IMAGE
 ```
 docker build -t <image_name>:<tagname> .
