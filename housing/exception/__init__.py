@@ -32,8 +32,10 @@ class HousingException(Exception):
         return self.error_message
         #It is a Dunder method -->google it.
         #whenever we try to print the object of any class, the information that is displayed py print function can be defined by this __str__() method.
+        #for e.g, if here I print HousingException class object, then it will give us whatever info it has in error_message.
 
     def __repr__(self) ->str:
         return HousingException.__name__.str()
         #It is a Dunder method
+        #__repr__ is object representation, it defines what info object should give without print statement.
     
