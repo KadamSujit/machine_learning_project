@@ -9,7 +9,7 @@ DESCRIPTION = "This is the first machine learning project for FSDS Nov 21 batch 
 #PACKAGES = ["housing"]
 REQUIREMENT_FILE_NAME="requirements.txt"
 
-def get_requirements_list() -> List[str]:
+def get_requirements_list() -> List[str]: #List str means it will return list with string elements in it
     """
     Description: This function is will return list of requirements
     mentioned in requirements.txt file
@@ -28,6 +28,6 @@ setup(
     #packages=PACKAGES,
     packages=find_packages(),
     install_requires=get_requirements_list()
-
 )
+ 
  

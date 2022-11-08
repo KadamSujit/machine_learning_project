@@ -97,9 +97,24 @@ docker stop <container_id>
 ```
 
 
-
 ```
 python setup.py install
+```
+```
+Description of setup.py file:
+It is similar file like requirements.txt used to install all the required data to run our project successfully.
+
+__init__.py file is used in housing folder to indicate housing folder as a package.
+Any folder that has __init__.py file will be considered as a package.
+
+find packages is a library in setuptools which finds all the folders containing __init__ files in a project folder
+and returns list of their names so that we can convert them into packages (for e.g housing)
+or else
+we can also add "-e ." in requirements. txt file. "-e ." does the same thing of finding packages.
+This is used for getting all our project related data into libraries
+
+get_requirements_list() is our customised function which we made to get all the list of all the external packages/libraries that are needed for our project. (i.e all information from requirements.txt)
+It is done so that we don't have to every time do pip install -r requirements.txt manually.
 ```
 
 
