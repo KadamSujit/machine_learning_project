@@ -104,6 +104,9 @@ python setup.py install
 Description of setup.py file:
 It is similar file like requirements.txt used to install all the required data to run our project successfully.
 
+package --> folder
+.py file --> module
+
 __init__.py file is used in housing folder to indicate housing folder as a package.
 Any folder that has __init__.py file will be considered as a package.
 
