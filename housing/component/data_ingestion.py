@@ -84,8 +84,11 @@ class DataIngestion:
             strat_train_set = None
             strat_test_set = None
 
-            split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+            #Instead of train_test_split, if we use StratifiedShuffleSplit we have similar data distribution for train as well as test data.
+            split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42) 
 
+            #StratifiedShuffleSplit gives us generator having o/p as index and not the values for train and test data.
+            #Hence we use .loc function below to get values from the dataframe and for loop to iterate through generato.
             for train_index, test_index in split.split(housing_data_frame, housing_data_frame["income_cat"]):
                 strat_train_set=housing_data_frame.loc[train_index].drop(["income_cat"], axis=1)
                 strat_test_set=housing_data_frame.loc[test_index].drop(["income_cat"], axis=1)
