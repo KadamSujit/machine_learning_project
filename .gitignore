@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+
+#out artifact folder is not needed to send to github
+housing/artifact

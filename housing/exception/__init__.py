@@ -22,9 +22,14 @@ class HousingException(Exception):
 
         #capturing error in file and at line number
         file_name = exec_tb.tb_frame.f_code.co_filename     #gives file name having error
-        line_number = exec_tb.tb_frame.f_lineno             #gives line number havine error
+        exception_block_line_number = exec_tb.tb_frame.f_lineno             #gives line number from except block having error
+        try_block_line_number = exec_tb.tb_lineno             #gives line number from try block having error
 
-        error_message = f"Error occured in script:[{file_name}] at line number:[{line_number}] error message: [{error_message}]"
+
+        error_message = f"""
+        "Error occured in script:
+        [{file_name}] at try block line number:[{try_block_line_number}] and exception block line number: [{exception_block_line_number}]
+        error message: [{error_message}]"""
 
         return error_message
 
