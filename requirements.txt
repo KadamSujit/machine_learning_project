@@ -6,4 +6,6 @@ numpy
 PyYAML
 scikit-learn
 evidently
+dill
+
 
